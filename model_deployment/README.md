@@ -12,7 +12,7 @@ pipenv install
 
 Our model was trained on this data, if you want to retrain the model feel free to use the code train.py and adapt it if you want :)
 
-We have saved the model and the DictVectorizer into bin files, using Pickle. So you can load those files, to do predictions and score new clients. To do that you can use this script (predict_locally.py)[https://github.com/Anasoubida/MLzoomcamp/blob/master/model_deployment/predict_locally.py].
+We have saved the model and the DictVectorizer into bin files, using Pickle. So you can load those files, to do predictions and score new clients. To do that you can use this script [predict_locally.py](https://github.com/Anasoubida/MLzoomcamp/blob/master/model_deployment/predict_locally.py).
 
 ### Score clients using the web service
 
