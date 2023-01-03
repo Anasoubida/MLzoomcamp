@@ -10,9 +10,10 @@ This is an application of CNN Architecture to do image classification.
 
 For this task we are using the "Dino or Dragon?" dataset that can be downloaded from [Kaggle](https://www.kaggle.com/datasets/agrigorev/dino-or-dragon).
 
-To unzip the file of the dataset you can run this command
+To download the dataset and unzip the file you can run this command
 
 ```bash
+wget https://github.com/alexeygrigorev/dino-or-dragon/releases/download/data/dino-dragon.zip
 unzip dino-dragon.zip
 ```
 
