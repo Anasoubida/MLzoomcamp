@@ -34,13 +34,13 @@ After running the previous command you can test your service locally using this 
 
 ### How to push a docker image to ecr
 
-####1) First of all you should install awscli to comunicate with aws
+#### 1) First of all you should install awscli to comunicate with aws
 
 ```bash
 pip install awscli
 ```
 
-####2) You should configure your aws infos
+#### 2) You should configure your aws infos
 
 run this command :
 ```bash
@@ -49,7 +49,7 @@ aws configure
 
 To see how to get your **AWS Access key ID** and  **AWS Secret Access Key**, go to this [link](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-appendix-sign-up.html)
 
-####3) Create the repository 
+#### 3) Create the repository 
 
 To do that run this command and replace the image_name by the name of your choice:
 
@@ -59,7 +59,7 @@ aws ecr create-repository --repository-name {image_name}
 
 Don't forget to copy your "repositoryUri", you will need it in the next steps
 
-####4)  log in to your repository
+#### 4)  log in to your repository
 
 Copy the "repositoryUri" without the last part that refers to the name of your image
 and replace it in link in this command : 
@@ -68,7 +68,7 @@ and replace it in link in this command :
 aws ecr get-login-password | docker login --username AWS --password-stdin {link}/reponame
 ```
 
-####5) tag your docker image
+#### 5) tag your docker image
 
 replace the name of your image in {image_name}, the {repositoryUri} by your repositoryUri, {tag} by the tag that you want
 and run this command
@@ -77,7 +77,7 @@ and run this command
 docker tag {image_name}:latest {repositoryUri}:{tag_name} 
 ```
 
-####6) Push your docker image to ecr
+#### 6) Push your docker image to ecr
 
 run this command
 
